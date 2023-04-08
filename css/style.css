@@ -1,88 +1,217 @@
-* {
+/*structure de la page*/
+html, body{
     margin: 0;
     padding: 0;
+    background-color: white;
     scroll-behavior: smooth;
 }
 
-body{
-    overflow-x: hidden;
-    font-family: serif;
+.pinkBackground{
+    background-color: rgb(241, 233, 233);
+}
+
+
+/*textes*/
+.fontTitre{
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Righteous', cursive;
 }
 
 h1{
-    font-family: serif;
-    text-transform: uppercase;
-}
-
-ul{
-    list-style-type: none;
-}
-
-li{
-    display: list-item;
-}
-
-.nav-title{
-    margin-left: 20px !important;
+    text-align: center;
+    padding-top: 5%;
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Righteous', cursive;
+    font-size: 350%;
     font-weight: bold;
+    color: #cb747b;
+    text-shadow: 2px 2px 2px #e6aeb3;
 }
 
-.nav-main{
-    background-color: #fadadd !important;
+h2{
+    text-align: center;
+    padding-top: 5%;
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Righteous', cursive;
+    font-size: 350%;
+    color: #cb747b;
+    text-shadow: 2px 2px 2px #e6aeb3;
+}
+
+h3{
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Righteous', cursive;
+    margin-top: 2%;
+    font-size: 240%;
+    margin-bottom: 2%;
+    color: #e6aeb3;
+    text-shadow: 2px 2px 2px #cb747b;
+}
+
+p{
+    text-align: center;
+    margin-top: 2%;
+    font-size: 125%;
+}
+
+
+/*navbar*/
+.sticky{
     position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1;
 }
 
-.logo{
-    width: 50px;
-    height: 50px;
-    display: inline-flex;
-}
-
-.nav-item{
-    display: flex;
-    justify-content: flex-end !important;
+.textPink{
+    color: #cb747b;
+    font-size: 125%;
     font-weight: bold;
 }
 
-
-.btn-color{
-    color: black !important;
+.colorPinkTransition{
+    color: #cb747b;
+    transition: 0.5s;
 }
 
-.size-image{
-    width: 550px !important;
-    height: 700px !important;
+.colorPinkTransition:hover{
+    color: #e6aeb3;
+}
+
+#carouselAutoplaying{
+    scroll-margin-top: 55px;
+}
+
+#a-propos{
+    scroll-margin-top: 55px;
+}
+
+#achats{
+    scroll-margin-top: 55px;
+}
+
+#video{
+    scroll-margin-top: 55px;
+}
+
+#contacts{
+    scroll-margin-top: 55px;
 }
 
 
-.quality{
-    align-items: center !important;
-    justify-content: center;
+/*carousel*/
+.carousel-inner h5{
+    text-shadow: 3px 3px 3px #cb747b;
+    font-size: 400%;
 }
 
+.carousel-inner p{
+    text-shadow: 2px 2px 2px #cb747b; 
+    font-size: 120%;
+}
 
-.banner {
-    width: 100%;
-    height: 100vh;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    color: white;
+.ui{
+    margin-top: 2%;
+}
+
+.equipe h1{
+    margin-bottom: 3%;
+}
+
+.card img{
     margin-top: 10px;
 }
 
-.banner img {
-    position: absolute;
-    bottom: 0;
-    z-index: 0;
+.centerText{
+    text-align: center;
 }
 
-.layer-3 {
-    margin-left: -800px;
-    margin-top: 280px;
+.roseatre{
+    background-color: #cb747b;
+    align-items: center;
 }
 
-.color-p{
-    color: black;
-    font-family: serif !important;
+.whiteText{
+    color: white;
+}
+
+.centerItems{
+    display: flex;
+    justify-content: center;
+}
+
+
+/*panels*/
+.panels{
+    height: 70vh;
+    width: 99.1vw;
+
+    display:flex;
+    margin-top: 2%;
+}
+
+.panel{
+    height: 100%;
+    flex:1;
+    width: 100px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition : flex .7s ease-in-out;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.panel:hover{
+    flex: 3;
+}
+
+.titreJeu{
+    color: #cb747b;
+    font-size: 350%;
+    text-shadow: 3px 3px 3px #e6aeb3;
+}
+
+.panel:hover>.titreJeu{
+    opacity: 100%;
+}
+
+.coquille{
+    background-image: url("../img/banner/R.jpg");
+}
+
+.ceinture{
+    background-image: url("../img/banner/R.jpg");
+}
+
+.sujet{
+    background-image: url("../img/banner/R.jpg");
+}
+.sujet1{
+    background-image: url("../img/banner/R.jpg");    
+}
+.sujet2{
+    background-image: url("../img/banner/R.jpg");    
+}
+.sujet3{
+    background-image: url("../img/banner/R.jpg");    
+}
+.sujet4{
+    background-image: url("../img/banner/R.jpg");    
+}
+.sujet5{
+    background-image: url("../img/banner/R.jpg");    
+}
+.sujet6{
+    background-image: url("../img/banner/R.jpg");    
+}
+
+
+/*contacts*/
+
+.contacts{
+    padding-bottom: 5%;
 }
