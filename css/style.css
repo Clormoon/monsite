@@ -1,22 +1,24 @@
 /*structure de la page*/
-html, body{
+html,
+body {
     margin: 0;
     padding: 0;
     scroll-behavior: smooth;
+    background-image: url('../img/background\ pag\ e.jpg');
 }
 
-.pinkBackground{
+.pinkBackground {
     background-image: url('../img/background\ pag\ e.jpg');
 }
 
 
 /*textes*/
-.fontTitre{
+.fontTitre {
     font-family: 'Oswald', sans-serif;
     font-family: 'Righteous', cursive;
 }
 
-h1{
+h1 {
     text-align: center;
     padding-top: 5%;
     font-family: 'Oswald', sans-serif;
@@ -27,7 +29,7 @@ h1{
     text-shadow: 2px 2px 2px #848484;
 }
 
-h2{
+h2 {
     text-align: center;
     padding-top: 5%;
     font-family: 'Oswald', sans-serif;
@@ -37,7 +39,7 @@ h2{
     text-shadow: 2px 2px 2px #000000;
 }
 
-h3{
+h3 {
     text-align: center;
     font-family: 'Oswald', sans-serif;
     font-family: 'Righteous', cursive;
@@ -48,7 +50,7 @@ h3{
     text-shadow: 2px 2px 2px #848484;
 }
 
-p{
+p {
     text-align: center;
     margin-top: 2%;
     font-size: 125%;
@@ -58,99 +60,100 @@ p{
 /*navbar*/
 
 
-.sticky{
+.sticky {
     position: sticky;
     top: 0;
     width: 100%;
     z-index: 1;
 }
 
-.colorPinkTransition{
+.colorPinkTransition {
     color: #000000;
     transition: 0.5s;
     font-size: 125%;
     font-weight: bold;
 }
 
-.colorPinkTransition:hover{
+.colorPinkTransition:hover {
     color: #848484;
 }
 
-.textNav{
+.textNav {
     color: #000000;
     transition: 0.5s;
 }
 
-.textNav:hover{
+.textNav:hover {
     color: #848484;
 }
 
-#carouselAutoplaying{
+#carouselAutoplaying {
     scroll-margin-top: 55px;
 }
 
-#a-propos{
+#a-propos {
     scroll-margin-top: 55px;
 }
 
-#achats{
+#achats {
     scroll-margin-top: 55px;
 }
 
-#video{
+#video {
     scroll-margin-top: 55px;
 }
 
-#contacts{
+#contacts {
     scroll-margin-top: 55px;
 }
 
 
 /*carousel*/
-.carousel-inner h5{
+.carousel-inner h5 {
     text-shadow: 3px 3px 3px #cb747b;
     font-size: 400%;
 }
 
-.carousel-inner p{
-    text-shadow: 2px 2px 2px #cb747b; 
+.carousel-inner p {
+    text-shadow: 2px 2px 2px #cb747b;
     font-size: 120%;
 }
 
-.ui{
+.ui {
     margin-top: 2%;
+
 }
 
-.equipe h1{
+.equipe h1 {
     margin-bottom: 3%;
 }
 
-.card img{
+.card img {
     margin-top: 10px;
 }
 
-.centerText{
+.centerText {
     text-align: center;
 }
 
-.roseatre{
+.roseatre {
     background-color: #000000;
     align-items: center;
     transition: 0.5s;
     border-radius: 10%;
 }
 
-.roseatre:hover{
+.roseatre:hover {
     border-color: #848484;
     border-radius: 10%;
 }
 
-.whiteText{
+.whiteText {
     color: white;
 }
 
 
-#large-btn{
+#large-btn {
     display: flex !important;
     justify-content: center !important;
     align-items: center !important;
@@ -158,7 +161,84 @@ p{
 
 /*contacts*/
 
-.contacts{
+.contacts {
     padding-bottom: 5%;
 }
 
+.place-video {
+    top: 50rem !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+}
+
+.resume {
+    font-size: 125% !important;
+    font-weight: bold !important;
+}
+
+.btn-like {
+    background: #fff;
+    border: unset;
+    outline: 0;
+    font-size: 18px;
+    cursor: pointer;
+    color: #65676b;
+    padding: 5px 10px;
+}
+
+.btn-like,
+.liked {
+    color: #0571ed;
+}
+
+.btn-like,
+.liked i {
+    animation: anim 0.5s ease-in-out;
+    -webkit-animation: anim 0.5s ease-in-out;
+}
+
+@keyframes anim {
+    100% {
+        transform: rotate(-15deg) scale(1.3);
+        -webkit-transform: rotate(-15deg) scale(1.3);
+        -moz-transform: rotate(-15deg) scale(1.3);
+        -ms-transform: rotate(-15deg) scale(1.3);
+        -o-transform: rotate(-15deg) scale(1.3);
+        filter: blur(0.5px);
+        -webkit-filter: blur(0.5px);
+    }
+}
+
+.btn-unlike {
+    background: #fff;
+    border: unset;
+    outline: 0;
+    font-size: 18px;
+    cursor: pointer;
+    color: #65676b;
+    padding: 5px 10px;
+}
+
+.btn-unlike,
+.unliked {
+    color: #0571ed;
+}
+
+.btn-unlike,
+.unliked i {
+    animation: anim 0.5s ease-in-out;
+    -webkit-animation: anim 0.5s ease-in-out;
+}
+
+@keyframes anim {
+    100% {
+        transform: rotate(-15deg) scale(1.3);
+        -webkit-transform: rotate(-15deg) scale(1.3);
+        -moz-transform: rotate(-15deg) scale(1.3);
+        -ms-transform: rotate(-15deg) scale(1.3);
+        -o-transform: rotate(-15deg) scale(1.3);
+        filter: blur(0.5px);
+        -webkit-filter: blur(0.5px);
+    }
+}
