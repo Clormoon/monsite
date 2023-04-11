@@ -78,14 +78,8 @@
                 gyroscope; picture-in-picture; web-share" allowfullscreen>
             </iframe>
             </div>
-            <button class="btn-like" id="like" onclick="liked()">
-                <i class="fa fa-thumbs-up"></i>
-                <span class="icon">&#128077;</span>
-            </button>
-            <button class="btn-unlike" id="unlike" onclick="unliked()">
-              <i class="fa fa-thumbs-up"></i>
-              <span class="icon">&#128078;</span>
-            </button>
+            <button class="button btn" id="green"><i class="fa fa-thumbs-up fa-lg" aria-hidden="true"></i></button>
+            <button class="button btn" id="red"><i class="fa fa-thumbs-down fa-lg" aria-hidden="true"></i></button>
 
             <p class="resume">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi ipsum, nesciunt pariatur eaque, omnis accusantium rem repellendus dignissimos dolores maxime id illo dolorem quisquam? Veniam accusamus placeat officia velit architecto.
@@ -226,17 +220,9 @@
               </div>
             </div>
         </div>
-        <script>
-            function liked(){
-              var element = document.getElementById("like");
-              element.classList.toggle("liked");
-            }
-          </script>
-          <script>
-            function unliked(){
-              var element = document.getElementById("unlike");
-              element.classList.toggle("unliked");
-            }
-          </script>
+
+
+        <script src="https://use.fontawesome.com/fe459689b4.js"></script>
+        <script src="js/like.js"></script>
     </body>
 </html>
