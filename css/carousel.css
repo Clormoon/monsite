@@ -15,9 +15,9 @@ img {
 }
 
 .txt-size{
-  font-size: 20px !important;
-  font-weight: bold;
-  color: #000000;
+  font-size: 25px !important;
+  font-weight: bolder;
+  color: rgb(255, 255, 255);
 }
 
 
@@ -114,54 +114,63 @@ img {
 .carrousel-item:nth-child(1) {
   --rotatey: 0;
   transform: rotatey(var(--rotatey)) translatez(var(--tz));
+  background-size: 250px 200px;
   background-image: url("../img/sujet/callon\ de\ stJ.webp");
 }
 
 .carrousel-item:nth-child(2) {
   --rotatey: 0;
   transform: rotatey(var(--rotatey)) translatez(var(--tz));
-  background-image: url("../img/sujet/ceinture.jpg");
+  background-size: 250px 200px;
+  background-image: url("../img/sujet/open\ science.jpg");
 }
 
 .carrousel-item:nth-child(3) {
   --rotatey: 0;
   transform: rotatey(var(--rotatey)) translatez(var(--tz));
-  background-image: url("../img/sujet/l\'humanité.jpg");
+  background-size: 250px 200px;
+  background-image: url("https://cdn.discordapp.com/attachments/1093875257762394152/1095654331606388797/humanity.png");
 }
 
 .carrousel-item:nth-child(4) {
   --rotatey: 0;
   transform: rotatey(var(--rotatey)) translatez(var(--tz));
+  background-size: 250px 200px;
   background-image: url("../img/sujet/experty.jpg");
 }
 
 .carrousel-item:nth-child(5) {
   --rotate: 0;
   transform: rotatey(var(--rotatey)) translatez(var(--tz));
+  background-size: 250px 200px;
   background-image: url("../img/sujet/innovation.jpg");
 }
 
 .carrousel-item:nth-child(6) {
   --rotatey: 0;
   transform: rotatey(var(--rotatey)) translatez(var(--tz));
-  background-image: url("../img/sujet/ceinture.jpg");
+  background-size: 250px 200px;
+  background-image: url("https://cdn.discordapp.com/attachments/1093875257762394152/1095659790102966293/ceinture.png");
 }
 
 .carrousel-item:nth-child(7) {
   --rotatey: 0;
   transform: rotatey(var(--rotatey)) translatez(var(--tz));
+  background-size: 250px 200px;
   background-image: url("../img/sujet/construction.jpg");
 }
 
 .carrousel-item:nth-child(8) {
   --rotatey: 0;
   transform: rotatey(var(--rotatey)) translatez(var(--tz));
+  background-size: 250px 200px;
   background-image: url("../img/sujet/contemporain.jpg");
 }
 
 .carrousel-item:nth-child(9) {
   --rotatey: 0;
   transform: rotatey(var(--rotatey)) translatez(var(--tz));
+  background-size: 250px 200px;
   background-image: url("../img/sujet/traductionsocio.webp");
 }
 
